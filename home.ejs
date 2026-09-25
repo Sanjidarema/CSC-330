@@ -1,0 +1,24 @@
+<%- include('partials/header') %>
+<main>
+  <section class="hero-section">
+    <h1><%= profile.name %></h1>
+    <h2><%= profile.headline %></h2>
+    <p><%= profile.summary %></p>
+  </section>
+  <section class="strengths-section">
+    <h3>Key Strengths</h3>
+    <ul class="strengths-list">
+      <% profile.keyStrengths.forEach(strength => { %><li><%= strength %></li><% }); %>
+    </ul>
+  </section>
+  <section class="contact-section">
+    <h3>Get In Touch</h3>
+    <form class="contact-form" action="#" method="POST">
+      <div class="form-group"><label for="name">Name</label><input id="name" name="name" type="text" required></div>
+      <div class="form-group"><label for="email">Email</label><input id="email" name="email" type="email" required></div>
+      <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea></div>
+      <button type="submit" class="btn-submit">Send Message</button>
+    </form>
+  </section>
+</main>
+<%- include('partials/footer') %>

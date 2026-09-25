@@ -1,0 +1,13 @@
+<%- include('partials/header') %>
+<main>
+  <h2>Technical Skills</h2>
+  <% skills.forEach(group => { %>
+    <section class="category-group">
+      <h3><%= group.category %></h3>
+      <ul class="skills-list">
+        <% group.items.forEach(skill => { %><li class="skill-badge"><%= skill %></li><% }); %>
+      </ul>
+    </section>
+  <% }); %>
+</main>
+<%- include('partials/footer') %>
