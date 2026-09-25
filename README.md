@@ -1,4 +1,5 @@
-# CSC-330## Resume Web Application
+# CSC-330
+## Resume Web Application
 
 This project is a multi-route resume web application built using Node.js, Express, EJS, HTML, and CSS.
 
