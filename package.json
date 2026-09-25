@@ -1,0 +1,8 @@
+{
+  "name": "resume-app",
+  "version": "1.0.0",
+  "description": "CSC 330 Assignment 1 - Multi-Route Resume",
+  "main": "app.js",
+  "scripts": {"start": "node app.js", "dev": "node app.js"},
+  "dependencies": {"ejs": "^3.1.10", "express": "^4.21.2"}
+}
